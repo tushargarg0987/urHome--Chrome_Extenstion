@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/home.css">
+    <title>urHOME</title>
+</head>
+<body style="display: flex;">
+    <div style="margin: 10vh 10vw;">
+        <h1 id="time">time</h1>
+    <h2 id="day" style="color: rgb(223, 223, 223);"></h2>
+    <div style="width:16vw;padding: 10px;background-color: rgba(0, 0, 0, 0.1);backdrop-filter: blur(20px);;border-radius: 8px;margin-top: 5vh;display: flex;align-items: center;justify-content: space-between;">
+        <img id="myImg" src="" alt="">
+        <div>
+            <h2 style="font-size: 18px;" id="status"></h2>
+            <p style="font-size: 14px;" id="temp"></p>
+            <p style="font-size: 14px;" id="wind"></p>
+        </div>
+    </div>
+    <div style="width:16vw;padding: 10px;background-color: rgba(0, 0, 0, 0.1);backdrop-filter: blur(20px);;border-radius: 8px;margin-top: 5vh;" >
+        <p id="quote"  class="motivate"></p><br>
+        <p align="right" id="author" class="motivate"></p>
+    </div>
+    </div>
+    <div style="margin-top: 10vh;">
+        <div class="searchBar" style="display: flex;">
+            <div style="background-color: white;border-bottom-left-radius: 15px;border-top-left-radius: 15px;display: flex; align-items: center;width: 30px;justify-content: center;" >
+                <img class="searchIcon" src="/googleIcon.png"  alt="">
+            </div>
+            <input id="inputBar" type="text" class="searchInput" autocomplete="on" >
+        </div>
+        <div style="display: flex; margin-top: 40px;margin-left: 15px;" class="options">
+            <h4 class="options-h selected" id="1" >BOOKMARKS</h4>
+            <h4 class="options-h" id="2">POPULAR</h4>
+            <h4 class="options-h" id="3">ENTERTAINMENT</h4>
+            <h4 class="options-h" id="4">DEVELOPER</h4>
+        </div>
+        <div style="display: block;">
+            <div class="add-bookmark-input noScroll hide">
+                <div class="add-bookmark-input" style="width: 90%;height: 60%;background-color: rgba(255, 255, 255, 0.892);">
+                    <input id="input-url" type="text" placeholder="Website URL" name="url">
+                    <input id="input-title" type="text" placeholder="Title">
+                    <select id="input-folder">
+                        <option value="urHomeBookmarks">urHOME Bookmarks</option>
+                        <option value="Popular">Popular</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Developer">Developer</option>
+                    </select>
+                </div>
+                <div class="input-button-group">
+                    <button id="cancel-btn">CANCEL</button>
+                    <button id="add-btn" >ADD</button>
+                </div>
+            </div>
+            <div id="bookmarks" class="set noScroll">
+                
+            </div>
+            <div id="popular" class="set hide noScroll">
+                <a href="https://www.amazon.com/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://www.amazon.com/&sz=256"></img><p>Amazon</p></a>
+                <a href="https://www.instagram.com/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://www.instagram.com/&sz=256"></img><p>Instagram</p></a>
+                <a href="https://www.facebook.com/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://www.facebook.com/&sz=256"></img><p>Facebook</p></a>
+                <a href="https://twitter.com/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://twitter.com/&sz=256"></img><p>Twitter</p></a>
+                <a href="https://www.netflix.com/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://www.netflix.com/&sz=256"></img><p>Netflix</p></a>
+                <a href="https://www.youtube.com/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://www.youtube.com/&sz=256"></img><p>Youtube</p></a>
+                <a href="https://web.whatsapp.com/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://web.whatsapp.com/&sz=256"></img><p>Whatsapp</p></a>
+                <a href="https://www.wikipedia.org/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://www.wikipedia.org/&sz=256"></img><p>Wikipedia</p></a>
+                <a href="https://www.grammarly.com/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://www.grammarly.com/&sz=256"></img><p>Grammarly</p></a>
+                <a href="https://www.reddit.com/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://www.reddit.com/&sz=256"></img><p>Reddit</p></a>
+                <a href="https://www.pinterest.com/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://www.pinterest.com/&sz=256"></img><p>Pinterest</p></a>
+                <a href="https://www.canva.com/" class="bookmark" align="center"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://www.canva.com/&sz=256"></img><p>Canva</p></a>
+                <a href="https://www.quora.com/" class="bookmark" align="center"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://www.quora.com/&sz=256"></img><p>Quora</p></a>
+            </div>
+            <div id="leisure" class="set hide noScroll">
+                <a href="https://www.instagram.com/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://www.instagram.com/&sz=256"></img><p>Instagram</p></a>
+                <a href="https://www.facebook.com/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://www.facebook.com/&sz=256"></img><p>Facebook</p></a>
+                <a href="https://twitter.com/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://twitter.com/&sz=256"></img><p>Twitter</p></a>
+                <a href="https://www.netflix.com/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://www.netflix.com/&sz=256"></img><p>Netflix</p></a>
+                <a href="https://www.primevideo.com/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://www.primevideo.com/&sz=256"></img><p>Prime</p></a>
+                <a href="https://www.hotstar.com/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://www.hotstar.com/&sz=256"></img><p>Hotstar</p></a>
+                <a href="https://www.youtube.com/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://www.youtube.com/&sz=256"></img><p>Youtube</p></a>
+                <a href="https://www.reddit.com/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://www.reddit.com/&sz=256"></img><p>Reddit</p></a>
+                <a href="https://www.pinterest.com/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://www.pinterest.com/&sz=256"></img><p>Pinterest</p></a>
+            </div>
+            <div id="developer" class="set hide noScroll">
+                <a href="https://github.com/" class="bookmark"><img class="bookmark-img" src="https://img.icons8.com/fluency/96/github.png"></img><p>Github</p></a>
+                <a href="https://stackoverflow.com/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://stackoverflow.com/&sz=256"></img><p>Stackoverflow</p></a>
+                <a href="https://www.w3schools.com/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://www.w3schools.com/&sz=256"></img><p>W3Schools</p></a>
+                <a href="https://developer.mozilla.org/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://developer.mozilla.org/&sz=256"></img><p>MDN Docs</p></a>
+                <a href="https://www.geeksforgeeks.org/" class="bookmark" align="center"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://www.geeksforgeeks.org/&sz=256"></img><p >GFG</p></a>
+                <a href="https://www.programiz.com/c-programming/online-compiler/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://www.programiz.com/c-programming/online-compiler/&sz=256"></img><p>Programiz</p></a>
+                <a href="https://www.youtube.com/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://www.youtube.com/&sz=256"></img><p>Youtube</p></a>
+                <a href="https://www.reddit.com/" class="bookmark"><img class="bookmark-img" src="https://s2.googleusercontent.com/s2/favicons?domain=https://www.reddit.com/&sz=256"></img><p>Reddit</p></a>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar" align="center">
+        <a id="getBooks" title="Bookmarks"><img class="side-icon" style="margin-top: 30px;" src="/assets/bookmarks.png" alt=""></a>
+        <a id="getHistory" title="History"><img class="side-icon" src="/assets/history.png" alt=""></a>
+        <a id="getDownloads" title="Dowmloads"><img class="side-icon" src="/assets/download.png" alt=""></a>
+        <hr color="white" width="50%" style="height: 1.5px; border-radius: 5px;margin: 10px 0;">
+        <a id="getExt" title="Extensions"><img class="side-icon" src="/assets/ext.png" alt=""></a>
+        <a title="Chrome Store" href="https://chrome.google.com/webstore/category/extensions" id="getExtStore"><img class="side-icon" src="/assets/ext_store.png" alt=""></a>
+        <hr color="white" width="50%" style="height: 1.5px; border-radius: 5px;margin: 10px 0;">
+        <a id="getSet" title="Settings"><img class="side-icon" src="/assets/settings.png" alt=""></a>
+    </div>
+    
+    <script src="/home.js"></script>
+</body>
+</html>

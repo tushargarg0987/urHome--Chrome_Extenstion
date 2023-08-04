@@ -1,0 +1,27 @@
+{
+  "name": "urHOME - Productive Workspace",
+  "version": "0.2",
+  "description": "Boost your productivity with an interesting home page that organises bookmarks, motivation, weather and much more.",
+  "permissions": [
+    "bookmarks","geolocation","favicon"
+  ],
+  
+  "chrome_url_overrides" : {
+    "newtab": "home.html"
+  },
+  "host_permissions": ["https://zenquotes.io/*"],
+  "icons": {
+    "128": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["_favicon/*"],
+      "matches": ["<all_urls>"],
+      "extension_ids": ["*"]
+    }
+  ],
+  "manifest_version": 3
+}

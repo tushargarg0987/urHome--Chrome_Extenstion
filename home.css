@@ -1,0 +1,246 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.noScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.noScroll {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+.scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.scroll::-webkit-scrollbar-track {
+  background: #161616;
+}
+
+/* Handle */
+.scroll::-webkit-scrollbar-thumb {
+  background: rgb(110, 110, 110);
+}
+
+/* Handle on hover */
+.scroll::-webkit-scrollbar-thumb:hover {
+  background: rgb(92, 92, 92);
+}
+body{
+  color: rgb(241, 241, 241);
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://source.unsplash.com/random/1500×4000/?dark');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#time{
+  font-size: 4vw;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+#day{
+  font-size: 1.6vw;
+  font-weight: 400;
+}
+
+.motivate{
+  font-size: 1.2vw;
+}
+
+.bookmark{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.bookmark-img{
+  width: 45px;
+  height: 45px;
+}
+
+.bookmark p{
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.bookmark-cross{
+  position: absolute;
+  display: flex;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 65px;
+  background-color: rgba(255, 255, 255, 0.838);
+  display: none;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.bookmark-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.bookmark-container:hover > .bookmark-cross{
+  display: flex;
+}
+
+.searchIcon{
+  height: 20px;
+  
+}
+
+.searchBar input{
+  height: 30px;
+  /* border-radius: 15px; */
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 35vw;
+}
+
+.searchInput{
+  border: none;
+  font-size: 15px;
+}
+
+.searchInput :active{
+  border: none;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.searchInput :focus{
+  outline: none;
+}
+
+.bookmark{
+  text-decoration: none;
+  margin: 10px 20px;
+  width: 60px;
+  height: 90px;
+}
+
+.add-bookmark-input{
+  position: absolute;
+  width: 35%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.604);
+  z-index: 100;
+  border-radius: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.add-bookmark-input input{
+  width: 80%;
+  height: 40px;
+  border-radius: 0.6vw;
+  padding: 0 5px;
+  font-size: 18px;
+  color: rgb(51, 51, 51);
+  border-width: 1px;
+}
+
+.add-bookmark-input select{
+  width: 82%;
+  height: 40px;
+  border-radius: 0.6vw;
+  /* margin: 15px 0; */
+  padding: 0 5px;
+  font-size: 18px;
+  border-width: 1px;
+}
+
+.add-bookmark-input label{
+  color: black;
+  margin-left: -75%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.input-button-group{
+  position: absolute;
+  bottom: 7%;
+  right: 7%;
+}
+
+#cancel-btn{
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: transparent;
+  color: black;
+  width: 80px;
+}
+
+#add-btn{
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: rgb(78, 78, 78);
+  color: white;
+  width: 80px;
+}
+
+.options-h{
+  margin: 3px 5px;
+  padding: 3px 7px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.315);
+  color: white;
+  cursor: pointer;
+}
+
+.selected{
+  background-color: white;
+  color: black;
+}
+
+.set{
+  display: flex;
+  padding: 15px;
+  width: 35vw;
+  flex-wrap: wrap;
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+
+.hide{
+  display: none;
+}
+
+
+.side-icon{
+  width: 50%;
+  cursor: pointer;
+  margin: 15px 0;
+}
+
+
+.sidebar{
+  position: absolute;
+  height: 100vh;
+  width: 50px;
+  right: 0;
+  top: 0;
+  background-color: rgba(196, 196, 196, 0.263);
+  
+}
+
+#myImg{
+  width: 90px;
+  color: white;
+}
