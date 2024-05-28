@@ -1,6 +1,6 @@
 {
   "name": "urHOME - Productive Workspace",
-  "version": "0.2",
+  "version": "1.0",
   "description": "Boost your productivity with an interesting home page that organises bookmarks, motivation, weather and much more.",
   "permissions": [
     "bookmarks","geolocation","favicon"
